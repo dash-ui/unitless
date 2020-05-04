@@ -7,7 +7,8 @@
   "license": "MIT",
   "description": "An object containing CSS properties that don't accept values with units",
   "keywords": [
-    "unitless"
+    "unitless",
+    "unitless css properties"
   ],
   "main": "dist/main/index.js",
   "module": "dist/module/index.js",
@@ -35,12 +36,11 @@
     "build-module": "npm run compile -- -d dist/module --env-name module",
     "build-types": "tsc -p tsconfig.json -d --outDir types --emitDeclarationOnly",
     "check-types": "tsc --noEmit -p tsconfig.json",
-    "compile": "babel src -x .ts --ignore \"**/*.test.ts\" --delete-dir-on-start",
+    "compile": "babel src -x .ts --delete-dir-on-start",
     "format": "prettier --write \"**/*.{ts,js,md,yml,json,eslintrc,prettierrc}\"",
     "lint": "eslint . --ext .ts",
-    "prepublishOnly": "npm run lint && npm run test && npm run build && npm run format",
-    "test": "jest",
-    "validate": "npm run check-types && npm run lint && npm run test -- --coverage"
+    "prepublishOnly": "npm run lint && npm run build && npm run format",
+    "validate": "npm run check-types && npm run linte"
   },
   "husky": {
     "hooks": {
@@ -58,18 +58,12 @@
   },
   "devDependencies": {
     "@lunde/babel-preset-es": "latest",
-    "@types/jest": "latest",
     "@typescript-eslint/eslint-plugin": "latest",
     "@typescript-eslint/parser": "latest",
-    "babel-plugin-annotate-pure-calls": "latest",
     "eslint": "latest",
-    "eslint-import-resolver-jest": "latest",
-    "eslint-plugin-jest": "latest",
     "husky": "latest",
-    "jest": "latest",
     "lint-staged": "latest",
     "prettier": "latest",
-    "ts-jest": "latest",
     "typescript": "latest"
   },
   "dependencies": {},

@@ -1,4 +1,4 @@
-module.exports = api => {
+module.exports = (api) => {
   const module = api.env('module')
   const esm = api.env('esm')
   const presetEnv = [
@@ -21,6 +21,5 @@ module.exports = api => {
 
   return {
     presets: [presetEnv],
-    plugins: ['annotate-pure-calls'],
   }
 }

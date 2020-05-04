@@ -1,2 +1,2 @@
-declare const _default: 'hello world'
-export default _default
+declare const unitlessKeys: Record<string, 1>
+export default unitlessKeys
