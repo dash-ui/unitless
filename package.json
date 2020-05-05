@@ -1,6 +1,6 @@
 {
   "name": "@dash-ui/unitless",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://github.com/dash-ui/unitless#readme",
   "repository": "github:dash-ui/unitless",
   "bugs": "https://github.com/dash-ui/unitless/issues",
@@ -23,7 +23,10 @@
     ".": {
       "browser": "./dist/module/index.js",
       "import": "./dist/esm/index.mjs",
-      "require": "./dist/main/index.js"
+      "require": "./dist/main/index.js",
+      "default": "./dist/main/index.js",
+      "source": "./src/index.ts",
+      "types": "./types/index.d.ts"
     },
     "./package.json": "./package.json",
     "./": "./"
