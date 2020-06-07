@@ -1,4 +1,4 @@
-const unitlessKeys: Record<string, 1> = {
+const unitlessKeys = {
   animationIterationCount: 1,
   borderImageOutset: 1,
   borderImageSlice: 1,
@@ -46,6 +46,6 @@ const unitlessKeys: Record<string, 1> = {
   strokeMiterlimit: 1,
   strokeOpacity: 1,
   strokeWidth: 1,
-}
+} as const
 
 export default unitlessKeys
