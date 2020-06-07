@@ -1,6 +1,6 @@
 {
   "include": ["src"],
-  "exclude": ["src/**/*.test.ts", "src/**/test.ts"],
+  "exclude": ["src/**/*.test.ts", "src/**/test.ts", "**/__snapshots__/**"],
   "compilerOptions": {
     "target": "es5",
     "lib": ["esnext" /*, "dom", "dom.iterable"*/],
