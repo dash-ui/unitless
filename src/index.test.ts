@@ -1,7 +1,7 @@
-import unitless from './index'
+import unitless from "./index";
 
-describe('unitless', () => {
-  it('should pass', () => {
-    expect(unitless).toMatchSnapshot()
-  })
-})
+describe("unitless", () => {
+  it("should pass", () => {
+    expect(unitless).toMatchSnapshot();
+  });
+});

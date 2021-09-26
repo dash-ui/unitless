@@ -46,6 +46,6 @@ const unitlessKeys = {
   strokeMiterlimit: 1,
   strokeOpacity: 1,
   strokeWidth: 1,
-} as const
+} as const;
 
-export default unitlessKeys
+export default unitlessKeys;

@@ -1,2 +1,2 @@
-declare const _default: Record<string, 1>
-export default _default
+declare const _default: Record<string, 1>;
+export default _default;
