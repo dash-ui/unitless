@@ -1,5 +1,5 @@
 <hr>
-  <img src='https://github.com/dash-ui/styles/raw/master/assets/logo.png'/>
+  <img src='https://github.com/dash-ui/styles/raw/main/assets/logo.png'/>
   <blockquote>
     An object containing CSS properties that don't accept values with units.
     This is a fork of <code>@emotion/unitless</code> because they don't have TypeScript types
